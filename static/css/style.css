@@ -1,0 +1,35 @@
+
+html {
+    font-size: 12px;
+    font-family: "Kantumruy Pro", sans-serif;
+    background-color: #87CEFA;
+    box-sizing: border-box;
+}
+
+body {
+    width: 500px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 4em;
+    text-align: center;
+}
+
+
+form {
+    margin-top: 30px;
+}
+
+input, button {
+    height: 27px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input {
+    width: 200px;
+}
+
+input:focus {
+    outline: none;
+}
+

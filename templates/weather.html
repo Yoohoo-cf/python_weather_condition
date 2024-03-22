@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} Weather</title>
     <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>{{ title }} Weather</h1>
-    <p>{{ status }} and {{ temp }} &deg;</p>
-    <p>Feels like {{ feels_like }} &deg;</p>
+    <p>{{ status }}</p>
+    <p>Temperature: {{ temp }} &deg;</p>
+    <p>Feels like: {{ feels_like }} &deg;</p>
     <form action="/weather">
         <input type="text" name="city" id="city" placeholder="Enter a city name"/>
         <button type="submit">
